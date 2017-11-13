@@ -1,0 +1,16 @@
+<svg width='100%' height='100%' data-bind="ctrlId: 'rightTopElbow'" viewBox="0 0 100 100">
+  <radialGradient data-bind="resId: 'pipeGrad'" cx="100%" cy="-52%" r="158%" fx="100%" fy="0" gradientUnits='objectBoundingBox'>
+    <stop  offset='32%' data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>
+    <stop  offset='56%' data-bind="attr: {'stop-color': (typeof bodyColorLight === 'undefined' ? '#D0D0D0': bodyColorLight())}"></stop>
+    <stop  offset='92%'  data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>/>
+  </radialGradient>
+  <radialGradient data-bind="resId: 'fillGrad'" cx="115%" cy="10%" r="150%" fx="115%" fy="10%" >
+    <stop  offset='32%' data-bind="attr: {'stop-color': (typeof fillColorLight === 'undefined' ? '#FFFFFF': fillColorLight())}"></stop>
+    <stop  offset='55%' data-bind="attr: {'stop-color': (typeof fillColor === 'undefined' ? '#0000FF': fillColor())}"></stop>
+    <stop  offset='90%' data-bind="attr: {'stop-color': (typeof fillColorLight === 'undefined' ? '#FFFFFF': fillColorLight())}"></stop>
+  </radialGradient>
+  <path d="M70,0 A30,30 0 0 0 100,30 L100,70 A70,70 0 0 1 30,0 Z" data-bind="fillResId: 'pipeGrad'"></path>
+  <g data-bind="style: { display: typeof value != 'undefined' && value() ? 'block' : 'none'}">
+    <path d="M60,0 A40,40 0 0 0 100,40 L100,60 A60,60 0 0 1 40,0 Z" data-bind="fillResId: 'fillGrad'"></path>
+  </g>
+</svg>

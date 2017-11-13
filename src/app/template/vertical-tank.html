@@ -1,0 +1,25 @@
+<svg width='100%' height='100%' data-bind="ctrlId: 'vertTank'" viewBox="0 0 100 100">
+  <linearGradient data-bind="resId: 'vertPipeGrad'" x1='-20%' y1='0%' x2='100%' y2='0%' gradientUnits='objectBoundingBox'>
+    <stop  offset='-20%' data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>
+    <stop  offset='40%' data-bind="attr: {'stop-color': (typeof bodyColorLight === 'undefined' ? '#D0D0D0': bodyColorLight())}"></stop>
+    <stop  offset='100%'  data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>/>
+  </linearGradient>
+  <radialGradient data-bind="resId: 'topPipeGrad'" cx="0%" cy="10%" r="150%" fx="30%" fy="30%" >
+    <stop  offset='-20%' data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>
+    <stop  offset=' 0%' data-bind="attr: {'stop-color': (typeof bodyColorLight === 'undefined' ? '#D0D0D0': bodyColorLight())}"></stop>
+    <stop  offset='150%'  data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>/>
+  </radialGradient>
+  <radialGradient data-bind="resId: 'bottomPipeGrad'" cx="-10%" cy="-30%" r="120%" fx="-10%" fy="-30%" >
+    <stop  offset='-200%' data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>
+    <stop  offset='0%' data-bind="attr: {'stop-color': (typeof bodyColorLight === 'undefined' ? '#D0D0D0': bodyColorLight())}"></stop>
+    <stop  offset='100%'  data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>/>
+  </radialGradient>
+  <!-- Body -->
+  <rect x='3%' y='10%' width='94%' height='80%' data-bind="fillResId: 'vertPipeGrad'"></rect>
+  <!-- Half spheres -->
+  <path d="M3,10 A105,90 0 0 1 97,10  Z" data-bind="fillResId: 'topPipeGrad'"></path>
+  <path d="M3,90 A105,90 0 0 0 97,90  Z" data-bind="fillResId: 'bottomPipeGrad'"></path>
+  <!-- Gaskets -->
+  <rect x='0%' y='10%' rx="1%" ry="1%" width='100%' height='3%' data-bind="fillResId: 'vertPipeGrad'"></rect>
+  <rect x='0%' y='87%' rx="1%" ry="1%" width='100%' height='3%' data-bind="fillResId: 'vertPipeGrad'"></rect>
+</svg>

@@ -1,0 +1,28 @@
+<svg width='100%' height='100%' data-bind="ctrlId: 'leftTway'" viewBox="0 0 100 100">
+  <linearGradient data-bind="resId: 'horPipeGrad'" y1='-20%' x1='0%' y2='100%' x2='0%' gradientUnits='objectBoundingBox'>
+    <stop  offset='-20%' data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>
+    <stop  offset='40%' data-bind="attr: {'stop-color': (typeof bodyColorLight === 'undefined' ? '#D0D0D0': bodyColorLight())}"></stop>
+    <stop  offset='100%'  data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>/>
+  </linearGradient>
+  <linearGradient data-bind="resId: 'horFillGrad'" x1='0%' y1='-50%' x2='0%' y2='150%' gradientUnits='objectBoundingBox'>
+    <stop  offset='-50%' data-bind="attr: {'stop-color': (typeof fillColorLight === 'undefined' ? '#FFFFFF': fillColorLight())}"></stop>
+    <stop  offset='75%' data-bind="attr: {'stop-color': (typeof fillColor === 'undefined' ? '#0000FF': fillColor())}"></stop>
+    <stop  offset='150%' data-bind="attr: {'stop-color': (typeof fillColorLight === 'undefined' ? '#FFFFFF': fillColorLight())}"></stop>
+  </linearGradient>
+  <linearGradient data-bind="resId: 'vertPipeGrad'" x1='-20%' y1='0%' x2='100%' y2='0%' gradientUnits='objectBoundingBox'>
+    <stop  offset='-20%' data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>
+    <stop  offset='40%' data-bind="attr: {'stop-color': (typeof bodyColorLight === 'undefined' ? '#D0D0D0': bodyColorLight())}"></stop>
+    <stop  offset='100%'  data-bind="attr: {'stop-color': (typeof bodyColor === 'undefined' ? '#303030': bodyColor())}"></stop>/>
+  </linearGradient>
+  <linearGradient data-bind="resId: 'vertFillGrad'" x1='-50%' y1='0%' x2='150%' y2='0%' gradientUnits='objectBoundingBox'>
+    <stop  offset='-50%' data-bind="attr: {'stop-color': (typeof fillColorLight === 'undefined' ? '#FFFFFF': fillColorLight())}"></stop>
+    <stop  offset='75%' data-bind="attr: {'stop-color': (typeof fillColor === 'undefined' ? '#0000FF': fillColor())}"></stop>
+    <stop  offset='150%' data-bind="attr: {'stop-color': (typeof fillColorLight === 'undefined' ? '#FFFFFF': fillColorLight())}"></stop>
+  </linearGradient>
+  <rect x='30%' y='0%' width='40%' height='100%' data-bind="fillResId: 'vertPipeGrad'"></rect>
+  <path d="M0,30 L30,30 L50,50 L30,70 L0,70 Z" data-bind="fillResId: 'horPipeGrad'"></path>
+  <g data-bind="style: { display: typeof value != 'undefined' && value() ? 'block' : 'none'}">
+    <rect x='40%' y='0%' width='20%' height='100%' data-bind="fillResId: 'vertFillGrad'" ></rect>
+    <path d="M0,40 L40,40 L50,50 L40,60 L0,60 Z" data-bind="fillResId: 'horFillGrad'"></path>
+  </g>
+</svg>

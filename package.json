@@ -23,7 +23,13 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "knockout": "^3.4.2",
+    "moment": "^2.19.1",
+    "morris": "^0.1.4",
+    "prettier": "1.7.4",
+    "raphael": "^2.2.7",
+    "bootstrap": "4.0.0-beta.2"
   },
   "devDependencies": {
     "@angular/cli": "1.5.0",
