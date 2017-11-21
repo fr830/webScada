@@ -1,4 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
+import { $ } from 'jquery';
+import { raphael } from 'raphael';
+import { morris } from 'morris';
 @Component({
   selector: 'app-scada',
   templateUrl: './scada.component.html',
