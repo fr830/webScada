@@ -1,3 +1,125 @@
 .svg-template {
     display: none;
 }
+
+circle.valveStopSignBackground {
+    fill: #FF0000;
+    fill-rule: evenodd;
+    stroke-width: 0px;
+    stroke-opacity: 0;
+    fill-opacity: 0.5;
+}
+
+circle.valveStopSignBorder {
+    stroke: #FFFFFF;
+    stroke-width: 2%;
+    stroke-opacity: 0.5;
+    fill-opacity: 0;
+}
+
+rect.valveStopSignBrick {
+    fill: #FFFFFF;
+    fill-rule: evenodd;
+    stroke-width: 0px;
+    stroke-opacity: 0;
+    fill-opacity: 0.5;
+}
+
+circle.crossHair {
+    stroke-width: 2px;
+    stroke-opacity: 0.8;
+    stroke: #000000;
+    fill: transparent;
+}
+
+rect.crossHair {
+    stroke-width: 2px;
+    stroke-opacity: 0.8;
+    stroke: #000000;
+    fill: transparent;
+}
+
+.morris-hover {
+    position: absolute;
+    z-index: 1000;
+}
+
+.morris-hover.morris-default-style {
+    border-radius: 10px;
+    padding: 6px;
+    color: #666;
+    background: rgba( 255, 255, 255, 0.8);
+    border: solid 2px rgba( 230, 230, 230, 0.8);
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 1em 0;
+}
+
+div.round-corners {
+    border-radius: 10px;
+}
+
+text.normalFont {
+    font-family: Lucida Sans Unicode;
+    font-size: 24px;
+    font-weight: normal;
+    fill: #114966;
+    cursor: default;
+}
+
+text.largeFont {
+    font-family: Lucida Sans Unicode;
+    font-size: 36px;
+    font-weight: normal;
+    fill: #114966;
+    cursor: default;
+}
+
+text.smallFont {
+    font-family: Lucida Sans Unicode;
+    font-size: 16px;
+    font-weight: normal;
+    fill: #114996;
+    cursor: default;
+}
+
+text.errorFont {
+    font-family: Lucida Sans Unicode;
+    font-size: 16px;
+    font-weight: normal;
+    fill: #FF0000;
+}
+
+.tank-curaway {
+    pointer-events: none;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10001;
+}
+
+.content {
+    width: 100%;
+}
+
+.svg-show-content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background: #FFF;
+}
