@@ -1,0 +1,29 @@
+{
+    "comment": "唯一标志信息",
+    "is": [
+        "el": "cutaway",
+        "comment1": "名称", 
+        "name": "cutaway",
+    ],
+    "comment2": "位置关系",
+    "x": "100",
+    "y": "200",
+    "z": "1",
+    "width": "360",
+    "height": "240",
+    "comment3": "变量名",
+    "a": "temp",
+    "comment4": "显示文本信息",
+    "ts": [
+        "color": "#111",
+        "size": "16",
+        "tx": "20",
+        "ty": "30"
+    ],
+    "comment5": "链接",
+    "link": {
+        "state": 0
+    },
+    "comment6": "类型",
+    "type": "2"
+}

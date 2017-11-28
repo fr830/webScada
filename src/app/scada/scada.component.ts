@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { DataService } from './data/data.service';
 
 import { raphael } from 'raphael';
 import { morris } from 'morris';
@@ -37,15 +38,16 @@ export class ScadaComponent implements OnInit {
      'horizontal-rotor'
   ];
 
-  constructor() {
+  constructor( public dataService: DataService) {
   }
 
   ngOnInit() {
 
-      for ( let i of this.tempalteArray) {
-          const tagContent = this.getTagInnerHTML( 'app-' + i);
-          this.appendChild( 'svg-show-content', tagContent);
-      }
+    //   for ( let i of this.tempalteArray) {
+    //       const tagContent = this.getTagInnerHTML( 'app-' + i);
+    //       this.appendChild( 'svg-show-content', tagContent);
+    //   }
+    console.log( this.dataService.getScada());
   }
 
   private getTagInnerHTML( tagName) {
